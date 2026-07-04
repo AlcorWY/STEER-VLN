@@ -2,7 +2,7 @@
 
 STEER-VLN is an experimental extension of the OpenFly Platform for embodied low-altitude UAV Vision-Language Navigation (VLN). It keeps the original OpenFly simulation, toolchain, training, and evaluation interfaces, and adds a temporal state-conditioned cybernetic adaptation pipeline for low-altitude UAV VLN experiments.
 
-This GitHub-ready version places all STEER-VLN-specific source code directly under the repository root directory `STEER-VLN/`. The original OpenFly `code/` directory is retained only for upstream baseline/toolchain compatibility; new STEER-VLN training, evaluation, ablation, runtime, and utility scripts should be launched from `STEER-VLN/`.
+This GitHub-ready version places all STEER-VLN-specific source code directly under the repository root directory `STEER-VLN/`. The new STEER-VLN training, evaluation, ablation, runtime, and utility scripts should be launched from `STEER-VLN/`.
 
 ![cover](images/cover.png)
 
@@ -40,8 +40,8 @@ cd STEER-VLN
 Create the Python environment:
 
 ```bash
-conda create -n openfly python=3.10 -y
-conda activate openfly
+conda create -n STEER-VLN python=3.10 -y
+conda activate STEER-VLN
 pip install -r requirements.txt
 pip install packaging ninja
 pip install "flash-attn==2.5.5" --no-build-isolation
@@ -82,7 +82,6 @@ STEER-VLN/
 │   ├── train_integrated_full.py # integrated STEER-VLN training entry
 │   ├── eval_hd_lora.py          # simulator evaluation entry
 │   └── run_steer_vln_*.sh       # one-command training/evaluation scripts
-├── code/                        # upstream OpenFly-compatible source code retained for compatibility
 ├── train/                       # OpenFly baseline training/evaluation scripts
 ├── scripts/                     # OpenFly simulation/toolchain scripts
 ├── configs/                     # scene and evaluation configs

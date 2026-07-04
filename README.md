@@ -1,4 +1,4 @@
-# STEER-VLN
+# STEER-VLN（We are modifying the code.）
 
 STEER-VLN is an experimental extension of the OpenFly Platform for embodied low-altitude UAV Vision-Language Navigation (VLN). It keeps the original OpenFly simulation, toolchain, training, and evaluation interfaces, and adds a temporal state-conditioned cybernetic adaptation pipeline for low-altitude UAV VLN experiments.
 
